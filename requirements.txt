@@ -1,0 +1,4 @@
+robin-stocks
+numpy
+smtplib
+ssl
