@@ -5,7 +5,7 @@ user.try_load_credentials()
 
 notifier = robin_monitor.GmailNotifier(user)
 
-monitor = robin_monitor.Monitor(refresh_interval_sec=30)
+monitor = robin_monitor.Monitor(refresh_interval_sec=60, pause_after_hours=True)
 monitor.set_user(user)
 
 email_action = robin_monitor.SendEmailAction(notifier, silent_time_sec=3600)
